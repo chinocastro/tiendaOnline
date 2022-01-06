@@ -1,0 +1,136 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #F8CED8;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+header h1{
+	text-align: center;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav ul li{
+	list-style: none;
+	padding: 15px;
+}
+
+nav ul li a{
+	background-color: white;
+	border-radius: 50px;
+	padding: 5px;
+}
+
+/* estilos grid */
+
+
+.mainNosotros{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-areas: "mainP mainP section section"
+						 "imagen1 imagen2 imagen3 imagen4"
+						 "parrafo parrafo parrafo parrafo";
+}
+
+.mainP{
+	grid-area: mainP;
+	text-align: center;	
+}
+
+.mainP span{
+	color: white;
+}
+
+.sectionNosotros{
+	grid-area: section;
+
+}
+
+.imagen1{
+	grid-area: imagen1;
+	
+}
+
+.imagen2{
+	grid-area: imagen2;
+	
+}
+
+.imagen3{
+	grid-area: imagen3;
+	
+}
+
+.imagen4{
+	grid-area: imagen4;
+	
+}
+
+.parrafo{
+	grid-area: parrafo;
+	text-align: center;
+	margin-top: 25px;
+	
+}
+
+.footerNosotros{
+	margin-top: 50px;
+}
+
+.footerNosotros p{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 834px) and (min-width: 415px) {
+	
+}
+
+
+@media only screen and (max-width: 414px) {
+	.mainNosotros{
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		grid-template-areas: "mainP mainP"
+							 "imagen1 imagen2" 
+							 "imagen3 imagen4"
+							 "parrafo parrafo";
+	}
+
+	.sectionNosotros{
+		display: none;
+	}
+}
